@@ -23,7 +23,7 @@ def check_db():
 
 def save_students(data):
     with open(db,'w') as f:
-        json.dump(data,f)
+        json.dump(data,f,indent=4)
 
 
 @app.get('/')
